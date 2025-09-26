@@ -1,0 +1,390 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.logo {
+    color: #aaff00;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #aaff00;
+}
+
+.btn-nav {
+    background: #aaff00;
+    color: #000 !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-nav:hover {
+    background: #77cc00;
+}
+
+/* Hamburger per mobile */
+.hamburger {
+    display: none;
+    font-size: 1.8em;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        background: rgba(0,0,0,0.9);
+        width: 200px;
+        text-align: right;
+        padding: 20px;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+        url('https://media-assets.wired.it/photos/68d0122386a28b713e4ffbb4/16:9/w_1600,c_limit/ea-sports-fc-26-2.jpg') center/cover no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    color: #aaff00;
+    text-shadow: 0 0 20px #aaff00, 0 0 30px #77cc00;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #aaff00;
+    text-shadow: 0 0 5px #aaff00;
+}
+
+/* Iscrizione Page */
+header {
+    display: none; /* Nasconde l'header precedente della pagina di iscrizione */
+}
+
+.hero-small {
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+        url('https://media-assets.wired.it/photos/68d0122386a28b713e4ffbb4/16:9/w_1600,c_limit/ea-sports-fc-26-2.jpg') center/cover no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-small .hero-content h1 {
+    font-size: 2.5em;
+    color: #aaff00;
+    text-shadow: 0 0 20px #aaff00, 0 0 30px #77cc00;
+}
+
+.hero-small .hero-content p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #aaff00;
+    text-shadow: 0 0 5px #aaff00;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 100vh; /* Rende il modulo responsive */
+    min-height: 800px;
+    border: none;
+    border-radius: 10px;
+}
+
+.whatsapp {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.whatsapp h1 {
+    color: #aaff00;
+    margin-bottom: 20px;
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* Common button style */
+.btn {
+    display: inline-block;
+     background: #77cc00;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #77cc00;
+}
+
+/* Specific button styles */
+.btn.hero-btn, .btn.nav-btn {
+    background: #aaff00;
+    color: #000;
+}
+
+.btn.whatsapp-btn {
+    background: #aaff00;
+    color: #000;
+    padding: 15px 40px;
+    font-size: 1.2em;
+}
+
+.btn.whatsapp-btn:hover {
+    background: #77cc00;
+}
+/* Premi */
+.premi {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('img/premi-bg.jpg') center/cover no-repeat; /* 👈 sostituire con immagine reale */
+}
+
+.premi h2 {
+    color: #aaff00;
+    margin-bottom: 40px;
+    font-size: 2em; /* stesso stile dei titoli */
+}
+
+.premi-cards {
+    display: flex;
+    flex-direction: column; /* 👈 una sotto l’altra */
+    gap: 30px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.premi .card {
+    background: #1c1c1c;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #aaff00;
+    text-align: left;
+}
+
+.premi .card h3 {
+    color: #aaff00;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.premi .card p {
+    margin: 8px 0;
+}
+
+/* Details */
+.details {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.details h2 { 
+    color: #aaff00; 
+    margin-bottom: 40px; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #aaff00;
+}
+
+
+
+/* Rules */
+.rules {
+    padding: 80px 20px;
+    background: #111;
+}
+
+.rules h2 { 
+    color: #aaff00; 
+    margin-bottom: 20px; 
+}
+
+.rules ul { 
+    list-style: none; 
+    max-width: 600px; 
+    margin: auto; 
+}
+
+.rules li {
+    background: #1c1c1c;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 4px solid #aaff00;
+}
+
+/* Sponsor */
+.sponsor {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sponsor h2 { 
+    color: #aaff00; 
+    margin-bottom: 30px; 
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sponsor-logos img {
+    max-width: 120px;
+    filter: brightness(0) invert(1);
+    
+}
+
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #000;
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a.btn {
+    background: #aaff00;
+    color: #000 !important;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer a.btn:hover {
+    background: #77cc00;
+}
+
+/* Mobile-specific styles (aggiunte) */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+    
+    .hero-small {
+        height: 25vh;
+    }
+
+    .hero-small .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-small .hero-content p {
+        font-size: 1em;
+    }
+
+    .btn.whatsapp-btn {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
