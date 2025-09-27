@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneo FC 26</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">FC 26</div>
+    <ul class="nav-links">
+      <li><a href="#dettagli">Dettagli Evento</a></li>
+      <li><a href="#premi">Premi</a></li>
+      <li><a href="#regolamento">Regolamento</a></li>
+      <li><a href="#Sponsor">Sponsor</a></li>
+      <li><a href="iscrizione.html" class="btn-nav">Iscriviti</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Torneo FC 26</h1>
+      <p>Il torneo più atteso dell’anno ti aspetta!</p>
+      <a href="iscrizione.html" class="btn">Iscriviti Ora</a>
+    </div>
+  </section>
+
+  <!-- Dettagli Evento -->
+  <section id="dettagli" class="details">
+    <h2 class="section-title">📅 Dettagli Evento</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Data</h3>
+        <p>1-2 Novembre</p>
+      </div>
+      <div class="card">
+        <h3>Luogo</h3>
+        <p>Parrocchia S.S Martiri <br>Taurisano</p>
+      </div>
+      <div class="card">
+        <h3>Categorie</h3>
+        <p>2007-2010 /2011-2015/ under 2015</p>
+      </div>
+      <div class="card">
+        <h3>Iscrizione</h3>
+        <p>7€ a giocatore <br>chiusura iscrizioni 29/10</p>
+      </div>
+      <div class="card">
+        <h3>Intrattenimento</h3>
+        <p>Possibilità di acquistare <br>bevande e snack</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premi -->
+  <section id="premi" class="premi">
+    <h2 class="section-title">🏆 Premi</h2>
+    <div class="premi-cards">
+      <div class="card">
+        <h3>Categoria 2007-2010</h3>
+        <p>🥇 1° Posto: Trofeo + Buono</p>
+        <p>🥈 2° Posto: Medaglia + Gadget</p>
+        <p>🥉 3° Posto: Medaglia di partecipazione</p>
+      </div>
+      <div class="card">
+        <h3>Categoria 2011-2015</h3>
+        <p>🥇 1° Posto: Trofeo + Buono</p>
+        <p>🥈 2° Posto: Medaglia + Gadget</p>
+        <p>🥉 3° Posto: Medaglia di partecipazione</p>
+      </div>
+      <div class="card">
+        <h3>Categoria Under 2015</h3>
+        <p>🥇 1° Posto: Trofeo + Buono</p>
+        <p>🥈 2° Posto: Medaglia + Gadget</p>
+        <p>🥉 3° Posto: Medaglia di partecipazione</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regolamento -->
+  <section id="regolamento" class="rules">
+    <h2  class="section-title">📖 Regolamento</h2>
+    <ul>
+      <li>Partite 1 vs 1</li>
+      <li>Durata match: 4 minuti per tempo</li>
+      <li>Modalità:gironi e fasi finali</li>
+      <li>Rispetto e fair play obbligatori</li>
+    </ul>
+  </section>
+
+  <!-- Sponsor -->
+  <section id="Sponsor" class="sponsor">
+    <h2 class="section-title">🤝 I Nostri Sponsor</h2>
+    <div class="sponsor-logos">
+      <img src="img/Immagine 2025-09-27 161718.png" alt="Sponsor 1">
+      <img src="img/sponsor2.png" alt="Sponsor 2">
+      <img src="img/sponsor3.png" alt="Sponsor 3">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Organizzato da <b>Parrocchia Santi Martiri </b> | Seguici anche su IG <b>torneo_fc26 </b></p>
+    <p>Contatti <b>3715255431</b> e <b>3501508667</b></p>
+  </footer>
+
+  <!-- Script per hamburger -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
